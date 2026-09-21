@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_description">可捲動的個人筆記，搭配免費表情貼圖、彩色柔光與自訂背景。</string>
+    <string name="sticker_picker_title">免費表情貼圖</string>
+    <string name="sticker_picker_count">%1$d 張免費表情貼圖 · 可隨文字刪除</string>
+    <string name="sticker_content_description">表情貼圖 %1$d</string>
+    <string name="sticker_source_title">貼圖來源與使用說明</string>
+    <string name="sticker_source_message">桌面長按空白處 → 小工具 → 小小筆記，選一篇筆記後長按拉大。\n\n文字工具：選取文字套用顏色、彩虹或柔光；未選取時套用全文。背景淡化只影響背景。\n\n內建 31 張表情貼圖來自 Twemoji v14.0.3，圖像採 Creative Commons Attribution 4.0 International 授權，可商用但需標示來源。詳見專案內的 docs/ASSET_SOURCES_PLAY.md 與 Twemoji 授權檔。</string>
+    <string name="sticker_source_action">查看素材授權</string>
+    <string name="sticker_source_url">https://github.com/twitter/twemoji</string>
+</resources>

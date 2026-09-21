@@ -1,0 +1,1 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"><instrumentation android:name="tw.local.memonote.DemoSetup" android:targetPackage="tw.local.memonote" android:label="Screenshot fixture"/></manifest>

@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/widget_shape" android:clipToOutline="true">
+    <ImageView android:id="@+id/widget_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:importantForAccessibility="no" android:contentDescription="@null" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:orientation="horizontal" android:gravity="center_vertical" android:paddingStart="14dp" android:paddingEnd="6dp" android:background="#CCFFFBF6">
+            <TextView android:id="@+id/widget_title" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="小小筆記" android:textColor="#302B3E" android:textSize="18sp" android:textStyle="bold" android:maxLines="2" android:ellipsize="end" />
+            <TextView android:id="@+id/widget_edit" android:layout_width="48dp" android:layout_height="48dp" android:gravity="center" android:text="編輯" android:textColor="#7954B3" android:textSize="12sp" />
+            <TextView android:id="@+id/widget_choose" android:layout_width="52dp" android:layout_height="48dp" android:gravity="center" android:text="換筆記" android:textColor="#7954B3" android:textSize="12sp" />
+        </LinearLayout>
+        <ListView android:id="@+id/widget_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:divider="@null" android:dividerHeight="0dp" android:scrollbars="vertical" android:cacheColorHint="@android:color/transparent" />
+        <TextView android:id="@+id/widget_message" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:padding="18dp" android:textColor="#302B3E" android:textSize="16sp" android:visibility="gone" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/tile_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:scaleType="fitCenter" android:contentDescription="筆記內容" />
+    <FrameLayout android:id="@+id/check_bounds_0" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_0" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_1" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_1" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_2" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_2" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_3" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_3" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_4" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_4" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_5" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_5" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_6" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_6" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_7" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_7" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_8" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_8" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_9" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_9" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_10" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_10" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_11" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_11" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_12" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_12" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_13" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_13" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_14" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_14" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_15" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_15" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_16" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_16" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_17" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_17" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_18" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_18" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_19" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_19" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_20" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_20" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_21" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_21" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_22" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_22" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/check_bounds_23" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <TextView android:id="@+id/check_hit_23" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:focusable="false" />
+    </FrameLayout>
+</FrameLayout>
