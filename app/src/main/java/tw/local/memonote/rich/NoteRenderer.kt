@@ -4,17 +4,30 @@ import android.content.Context
 import android.graphics.*
 import android.text.*
 import tw.local.memonote.data.*
+import tw.local.memonote.model.NoteColors
 
-class NoteRenderer(context: Context,val note: Note,val width: Int,val scale: Float) {
-    private val padding=(12*scale).toInt()
+class NoteRenderer(context: Context,val note: Note,val width: Int,val scale: Float,
+                   baseTextColor: Int = 0xff302b3e.toInt(), textSizeSp: Int = 16,
+                   fontFamily: String = "sans-serif", horizontalPaddingDp: Int = 12,
+                   lineGapDp: Int = 5, showImages: Boolean = true) {
+    private val padding=(horizontalPaddingDp*scale).toInt()
     private val paint=TextPaint(Paint.ANTI_ALIAS_FLAG).apply {
-        textSize=16*scale*(context.resources.displayMetrics.scaledDensity/context.resources.displayMetrics.density)
-        color=0xff302b3e.toInt()
-        typeface=Typeface.create("sans-serif",Typeface.NORMAL)
+        textSize=textSizeSp*scale*(context.resources.displayMetrics.scaledDensity/context.resources.displayMetrics.density)
+        color=baseTextColor
+        typeface=Typeface.create(fontFamily,Typeface.NORMAL)
     }
     val text=RichText.decode(context,note.body,note.formatting,(76*scale).toInt(),(width-padding*2).coerceAtLeast(24))
+        .apply {
+            if (!showImages) getSpans(0,length,StickerSpan::class.java).forEach { image ->
+                val start=getSpanStart(image); val end=getSpanEnd(image); removeSpan(image)
+                setSpan(object : android.text.style.ReplacementSpan() {
+                    override fun getSize(p: Paint,t: CharSequence,s: Int,e: Int,fm: Paint.FontMetricsInt?)=0
+                    override fun draw(c: Canvas,t: CharSequence,s: Int,e: Int,x: Float,top: Int,y: Int,b: Int,p: Paint)=Unit
+                },start,end,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+            }
+        }
     private val layout=StaticLayout.Builder.obtain(text,0,text.length,paint,(width-padding*2).coerceAtLeast(24))
-        .setAlignment(Layout.Alignment.ALIGN_NORMAL).setLineSpacing(5*scale,1f).setIncludePad(true).build()
+        .setAlignment(Layout.Alignment.ALIGN_NORMAL).setLineSpacing(lineGapDp*scale,1f).setIncludePad(true).build()
     data class Tile(val firstLine: Int,val lastLine: Int,val top: Int,val bottom: Int,val start: Int,val end: Int)
     val tiles: List<Tile> = buildList {
         var line=0
@@ -56,6 +69,8 @@ class NoteRenderer(context: Context,val note: Note,val width: Int,val scale: Flo
     companion object {
         fun background(context: Context,ref: String,fade: Int,width: Int,height: Int): Bitmap {
             val bitmap=Bitmap.createBitmap(width,height,Bitmap.Config.ARGB_8888); val c=Canvas(bitmap)
+            val solid = NoteColors.backgroundColor(ref)
+            if (solid != null) { c.drawColor(solid); return bitmap }
             c.drawColor(0xfffffbf6.toInt())
             val p=Paint(Paint.ANTI_ALIAS_FLAG).apply { alpha=((100-fade.coerceIn(0,100))*2.55f).toInt() }
             val photo=ImageFiles.load(context,ref)

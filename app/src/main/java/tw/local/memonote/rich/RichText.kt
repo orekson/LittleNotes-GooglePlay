@@ -68,10 +68,17 @@ object RichText {
             val r=checks.optJSONObject(i) ?: continue; val at=r.optInt("at",-1); val id=r.optString("id")
             if(at in text.indices && text[at]=='\uFFFC' && id.isNotBlank()) result.setSpan(CheckSpan(id,r.optBoolean("checked"),(36f*stickerSize/76).toInt().coerceAtLeast(1)),at,at+1,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
         }
+        val reminders=json.optJSONArray("reminders") ?: JSONArray()
+        for(i in 0 until reminders.length()) {
+            val r=reminders.optJSONObject(i) ?: continue
+            val at=r.optInt("at",-1); val id=r.optString("id"); val time=r.optLong("time",0)
+            if(at in text.indices && text[at]=='\uFFFC' && id.isNotBlank() && time>0)
+                result.setSpan(ReminderSpan(id,time,tw.local.memonote.reminder.ReminderRule.read(r)),at,at+1,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        }
         return result
     }
     fun encode(text: Spanned): String {
-        val styles=JSONArray(); val stickers=JSONArray(); val checks=JSONArray()
+        val styles=JSONArray(); val stickers=JSONArray(); val checks=JSONArray(); val reminders=JSONArray()
         text.getSpans(0,text.length,PaintSpan::class.java).forEach { span ->
             val start=text.getSpanStart(span); val end=text.getSpanEnd(span)
             if(start<end) styles.put(JSONObject().put("start",start).put("end",end).put("color",span.style.color).put("rainbow",span.style.rainbow).put("glow",span.style.glow))
@@ -84,7 +91,13 @@ object RichText {
             val at=text.getSpanStart(span)
             if(at in 0 until text.length && text[at]=='\uFFFC') checks.put(JSONObject().put("at",at).put("id",span.id).put("checked",span.checked))
         }
-        return JSONObject().put("version",2).put("styles",styles).put("stickers",stickers).put("checks",checks).toString()
+        text.getSpans(0,text.length,ReminderSpan::class.java).forEach { span ->
+            val at=text.getSpanStart(span)
+            if(at in 0 until text.length && text[at]=='\uFFFC')
+                reminders.put(span.rule.write(JSONObject().put("at",at).put("id",span.id).put("time",span.timeMillis)))
+        }
+        return JSONObject().put("version",3).put("styles",styles).put("stickers",stickers)
+            .put("checks",checks).put("reminders",reminders).toString()
     }
     fun format(text: Editable,start: Int,end: Int,change: (TextStyle)->TextStyle) {
         val old=text.getSpans(0,text.length,PaintSpan::class.java)

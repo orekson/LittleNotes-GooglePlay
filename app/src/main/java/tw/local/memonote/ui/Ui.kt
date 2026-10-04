@@ -13,10 +13,21 @@ object Ui {
     val ink=0xff302b3e.toInt(); val purple=0xff7954b3.toInt(); val muted=0xff82778f.toInt(); val page=0xfffaf7ff.toInt()
     fun dp(c: Context,n: Int)=(n*c.resources.displayMetrics.density).toInt()
     fun rounded(color: Int,radius: Float=18f)=GradientDrawable().apply { setColor(color); cornerRadius=radius }
-    fun label(c: Context,text: String,size: Float=16f,color: Int=ink,bold: Boolean=false)=TextView(c).apply {
-        this.text=text; textSize=size; setTextColor(color); if(bold) typeface=Typeface.create("sans-serif",Typeface.BOLD)
+    fun label(c: Context,text: String,size: Float=16f,color: Int=ink,bold: Boolean=false,
+              translate: Boolean=true)=TextView(c).apply {
+        this.text=if(translate) AppLanguage.text(c,text) else text
+        textSize=size; setTextColor(color); if(bold) typeface=Typeface.create("sans-serif",Typeface.BOLD)
     }
-    fun button(c: Context,text: String,primary: Boolean=false,click: ()->Unit)=Button(c).apply {
+    fun rawLabel(c: Context,text: String,size: Float=16f,color: Int=ink,bold: Boolean=false)=
+        label(c,text,size,color,bold,false)
+    fun button(c: Context,text: String,primary: Boolean=false,click: ()->Unit)=
+        makeButton(c,AppLanguage.text(c,text),primary,click)
+    fun rawButton(c: Context,text: String,primary: Boolean=false,click: ()->Unit)=
+        makeButton(c,text,primary,click)
+    fun bouncingButton(c: Context,text: String,primary: Boolean=false,click: ()->Unit)=
+        makeButton(c,AppLanguage.text(c,text),primary,click,BounceButton(c))
+    private fun makeButton(c: Context,text: String,primary: Boolean,click: ()->Unit,
+                           button: Button=Button(c))=button.apply {
         this.text=text; isAllCaps=false; textSize=14f; minHeight=dp(c,46); minimumHeight=dp(c,46)
         setTextColor(if(primary) Color.WHITE else purple); backgroundTintList=android.content.res.ColorStateList.valueOf(if(primary) purple else 0xffeee5fb.toInt())
         setOnClickListener { click() }
@@ -39,5 +50,5 @@ object Ui {
         }
     }
     fun pad(v: View,n: Int) { val p=dp(v.context,n); v.setPadding(p,p,p,p) }
-    fun toast(c: Context,text: String)=Toast.makeText(c,text,Toast.LENGTH_LONG).show()
+    fun toast(c: Context,text: String)=Toast.makeText(c,AppLanguage.text(c,text),Toast.LENGTH_LONG).show()
 }

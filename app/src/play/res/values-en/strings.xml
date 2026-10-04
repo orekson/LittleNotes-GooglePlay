@@ -1,0 +1,9 @@
+<resources>
+    <string name="widget_description">Scrollable personal note with free emoji stickers, colorful glow, and custom backgrounds.</string>
+    <string name="sticker_picker_title">Free emoji stickers</string>
+    <string name="sticker_picker_count">%1$d free emoji stickers · remove with the text</string>
+    <string name="sticker_content_description">Emoji sticker %1$d</string>
+    <string name="sticker_source_title">Sticker sources and help</string>
+    <string name="sticker_source_message">Long-press an empty home screen spot → Widgets → 小小筆記. Choose a note, then long-press to resize.\n\nText tools: select text to apply colors, rainbow, or glow. With no selection, the effect applies to the whole note. Background fade only affects the background.\n\nThe 31 built-in emoji stickers come from Twemoji v14.0.3. The graphics are licensed under Creative Commons Attribution 4.0 International, which allows commercial use with attribution. See docs/ASSET_SOURCES_PLAY.md and the Twemoji license file in the project.</string>
+    <string name="sticker_source_action">View asset license</string>
+</resources>

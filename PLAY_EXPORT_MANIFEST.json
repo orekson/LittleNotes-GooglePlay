@@ -5,7 +5,7 @@
   },
   {
     "Path": ".gitignore",
-    "SHA256": "68935FF77B395AE7AB6DBB17ED9580AD097BE6C8BA1211632E8910DA1978D0C8"
+    "SHA256": "1878F1D8F5F182904CC405903C7B8B4C5A26BA6104A48FF61ABEE4AB9F7792A0"
   },
   {
     "Path": "build-local.ps1",
@@ -17,7 +17,7 @@
   },
   {
     "Path": "CHANGELOG.md",
-    "SHA256": "E8E8359101D328A48B96736C89C33CD0DAB2BE7387B637CC099D14BCA979C98D"
+    "SHA256": "E5EF722B3677E6A27BA1E45924866FE50838A8188CB9D38DE923D92D5636317F"
   },
   {
     "Path": "gradle.properties",
@@ -33,11 +33,15 @@
   },
   {
     "Path": "README.md",
-    "SHA256": "20651F17BA524066B3828CF816F06803C45A4B2EBAAB55C04D4540C1726F4220"
+    "SHA256": "DF911EAC1A041A3E23C6DC5DC826325E4EF2A776353B27546841FDD2373D2B08"
   },
   {
     "Path": "settings.gradle.kts",
     "SHA256": "DA547170F5C94CFE531408742F99849088294CDCF32DD6CA5685B138FB6DB029"
+  },
+  {
+    "Path": "test-on-emulator.ps1",
+    "SHA256": "F150262BB11E75A73609A75E49A13D74C2BCA56C5270D4BD705FD54592CE4995"
   },
   {
     "Path": ".github\\workflows\\android.yml",
@@ -45,15 +49,47 @@
   },
   {
     "Path": "app\\build.gradle.kts",
-    "SHA256": "911E04B61A31F8B327146602E2B94991DDCCF2FA7705F60FEF966097A6BF025B"
+    "SHA256": "7E09AEF0350C3C83B82B38017C513A130CEE1124AD2DB6D560C0F7A5CFB43AC4"
   },
   {
     "Path": "app\\src\\androidTest\\AndroidManifest.xml",
     "SHA256": "2DD7674867AC83D7E082BB6EA11B22B6728779B6DB3098EE14765271815263DE"
   },
   {
+    "Path": "app\\src\\androidTest\\java\\tw\\local\\memonote\\AppLanguageTest.kt",
+    "SHA256": "7A56D1E6903B9F760354254603F627CF457BDA8A98871EE5460316FE238F6710"
+  },
+  {
+    "Path": "app\\src\\androidTest\\java\\tw\\local\\memonote\\BackupIntegrationTest.kt",
+    "SHA256": "312A3A6E0B708C3CED1E0258D12A2BCD94EF2547F7A50885EC215337C7D20B50"
+  },
+  {
+    "Path": "app\\src\\androidTest\\java\\tw\\local\\memonote\\BackupPasswordDisplayTest.kt",
+    "SHA256": "3EC60515DD375CE06C5AC155DDC84036891D0E2C1543C0A2A351AE565283D515"
+  },
+  {
+    "Path": "app\\src\\androidTest\\java\\tw\\local\\memonote\\CloudAndNavigationRegressionTest.kt",
+    "SHA256": "AC2169E756F3A97F5E061C95BC086340721DA7E731155954308AFB1E290EFDEE"
+  },
+  {
+    "Path": "app\\src\\androidTest\\java\\tw\\local\\memonote\\CloudBackupStateTest.kt",
+    "SHA256": "3AD121AA6897D216C135264E9BFBC8758BBE5F7F81B0C6270A8E96CEDAA039BA"
+  },
+  {
+    "Path": "app\\src\\androidTest\\java\\tw\\local\\memonote\\CloudJobPermissionTest.kt",
+    "SHA256": "0514563AF995AA70A1A1ABF64A3EF9A503FD5835AC4A308B81EECC772BF75DF1"
+  },
+  {
     "Path": "app\\src\\androidTest\\java\\tw\\local\\memonote\\DemoSetup.kt",
     "SHA256": "9C716EB4CA69C8A7355488AD2E756D9853F93910267F30DF51264886F3E91973"
+  },
+  {
+    "Path": "app\\src\\androidTest\\java\\tw\\local\\memonote\\EditorRenderingRegressionTest.kt",
+    "SHA256": "FEEBA5ABC3AA3AA89908C598EB830A4A71824C4B69F2CBA180793DF135F262D4"
+  },
+  {
+    "Path": "app\\src\\androidTest\\java\\tw\\local\\memonote\\GoogleDriveLiveProbeTest.kt",
+    "SHA256": "9B550E3B927CB7A4B33CF11633F6BC668B742292D69F1BA3C9D949BE3D186782"
   },
   {
     "Path": "app\\src\\androidTest\\java\\tw\\local\\memonote\\NoteIntegrationTest.kt",
@@ -64,24 +100,104 @@
     "SHA256": "B1752358485C702542754012E454B3CADB760D2ABEB8C97FA361D9684F24C4C7"
   },
   {
+    "Path": "app\\src\\androidTest\\java\\tw\\local\\memonote\\ReminderNotificationTest.kt",
+    "SHA256": "35FEB9FD3A7367980E67385D421E7A2E0174DFF0A33C269FCE93588B1E6FA46B"
+  },
+  {
+    "Path": "app\\src\\androidTest\\java\\tw\\local\\memonote\\ReminderPersistenceTest.kt",
+    "SHA256": "55DA06CB33AFE52237FD199AD9F1DF86478DDCC17409D99457E11F62596B4E3A"
+  },
+  {
+    "Path": "app\\src\\androidTestPlay\\java\\tw\\local\\memonote\\AdvancedFeaturesTest.kt",
+    "SHA256": "61080DBAE8F4065DE9C5012FDEA4B06F1BD12F8D36025B4F14CF097C3DFC13D6"
+  },
+  {
+    "Path": "app\\src\\androidTestPlay\\java\\tw\\local\\memonote\\PlayEntitlementTest.kt",
+    "SHA256": "A65396B5AF3C0BED24D8C88490788C403D63E680FAD454FC1F3EF07FF1EE18CC"
+  },
+  {
     "Path": "app\\src\\main\\AndroidManifest.xml",
-    "SHA256": "833EFE642FC6D85ED2420864AA1BD45E35A29CBDCF06CDECEDBE79A7E656454F"
+    "SHA256": "46C002C7C4AC1D328B95FA581F5BE2403A292B69D0242AD8590C648F898DEB58"
+  },
+  {
+    "Path": "app\\src\\main\\assets\\privacy_policy_zh.txt",
+    "SHA256": "9F245C412C9103E6FB14FF0994B7F31503A56AC09489A5D865797F02C4C3348F"
+  },
+  {
+    "Path": "app\\src\\main\\assets\\i18n\\catalog.txt",
+    "SHA256": "FFA35AFC09C90FA56E59700BAE200432FF941A383611085E98EF5E2A8479D173"
+  },
+  {
+    "Path": "app\\src\\main\\assets\\i18n\\privacy_en.txt",
+    "SHA256": "90A2A94E87524912534904EB36310E4ED99EA9BC1F5E1ACAA192AA20A0076C0C"
+  },
+  {
+    "Path": "app\\src\\main\\assets\\i18n\\privacy_es.txt",
+    "SHA256": "97DF4BB04676C82C97450957384742F810548BC209E920B109A0580CDC454D0B"
+  },
+  {
+    "Path": "app\\src\\main\\assets\\i18n\\privacy_ja.txt",
+    "SHA256": "8241BD1BC5AA54436DD18C062890B9116DD6ACD59F8D104F6EDFEBD0282E37C5"
+  },
+  {
+    "Path": "app\\src\\main\\assets\\i18n\\privacy_ko.txt",
+    "SHA256": "6BFA325E802AAAECEE6233AF8766A4D354A303E9FC63D1EA86640CF0B550037F"
+  },
+  {
+    "Path": "app\\src\\main\\assets\\i18n\\privacy_zh-TW.txt",
+    "SHA256": "CFA9ABDC651FB5334F307ED2193DBC9FAAE5B33FE163FCF09E34DB5E6351B33F"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\CloudProfileActivity.kt",
+    "SHA256": "CE904399636BE5C85F1B403F25A388E08E9C77F2B8B0219C76887621FA4A1988"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\DateScheduleActivity.kt",
+    "SHA256": "7B254A610F725FEEC15543E6C322F024B104DD03B4A6E8BD81B4B11D47106F87"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\EditorActivity.kt",
-    "SHA256": "FE45C8A20884B93C56A5288BD2226111D132AD4757621AC2BD58BB6BA7E7FFC1"
+    "SHA256": "675F54FA10793C5232D9A0F0E26108C5FECC8605EA2AA616813147586D298709"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\HistoryActivity.kt",
+    "SHA256": "F67307D2230B8FEEE45BC740E2C90848A8B5435A4086292217875DBD6131862A"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\MainActivity.kt",
-    "SHA256": "635888C9C2B958BA63C76CAA698802107FAEA82BC1B68ACBD40263A13844ABE4"
+    "SHA256": "3F2F44F9EA520FB9CB641641AF1B3CBCF710C6C7A89115F720420BC1D9BC0590"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\PreviewActivity.kt",
-    "SHA256": "C064E90E17C0BCBCC11E8E124CF337722B760C5956CCEEC10F67E6CFC17445A2"
+    "SHA256": "629510965E26996B584508D03492298C0A734820888DA02E7C40C75BBA7789A3"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\ProActivity.kt",
+    "SHA256": "62508FB4202558F8C6BFEC78EC69ED54BDDE5D35B0C1B854BA9C7BEDBD1C3EBD"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\WidgetConfigActivity.kt",
-    "SHA256": "5BA47449BDCA6ADB8EA0893FFC937B31B697A7A6E93DC3B596C3180DA49817E1"
+    "SHA256": "662BB0027D8E34C82A35AA89BD2B63B4FEF913CC528C970A402BD546452FBBCB"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\cloud\\CloudAuth.kt",
+    "SHA256": "70F3DA6F3AEC71ADD775D85D25ABFF3176FAFABBF346D629D3078FFE248E6D74"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\cloud\\CloudBackupJob.kt",
+    "SHA256": "9F51CB28B57141E59D5811C1265992638DF363AB4F3ACC6F221D785915A698CE"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\cloud\\CloudBackupState.kt",
+    "SHA256": "2A3FBDBCA56EE2824CD9F9138825FBF27D888061D0A52647D720EDDF0E7C88E8"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\cloud\\CloudDriveClient.kt",
+    "SHA256": "1D9DA797418D0797577553F760B871A7DB18DFD8D102E75878CD2C4EDD692251"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\data\\BackupRepository.kt",
+    "SHA256": "9562C7B772BCBE3F6251AF30180EA9015086A0FA0D142E2AA671FD922F6D66AA"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\data\\CheckState.kt",
@@ -89,71 +205,235 @@
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\data\\DraftFiles.kt",
-    "SHA256": "61418671578909FE0E61C942EF1516030CF0B3C47FC5BC472B9E99887E329405"
+    "SHA256": "C69706A15EE333FCF16CC92B1912D2FA0F7B3149DD830764DD7D7DDF68E3D149"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\data\\ImageFiles.kt",
-    "SHA256": "738D1F168B9864A0FBDBACE89A559061E63C2FD7860A101CDC3E3CDA0C76DFA0"
+    "SHA256": "3BDCB933000C3FE0D1B106875390F60E307F4F42ECDBBD82F2696F865A27C1D7"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\data\\Note.kt",
-    "SHA256": "925727A87E0769029B7D5DE8FE041908B19F57B892F4AFC826E4DEDF1301DC22"
+    "SHA256": "4FB0E6AB5B6A2D7B08EB038BB9239E10CD708E2F1FCD3042883343405895C008"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\data\\NoteHistory.kt",
+    "SHA256": "BE163C810F2B231ECEA8ACEDCE6C960395B56A9C94A801553FEFC158418E10DD"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\data\\NoteStore.kt",
-    "SHA256": "01CD594FBA33369916EA6303E643E68DA643157913871103CFF3D67E5FCC29E1"
+    "SHA256": "83B4B93686D517A2BD9B7E045FB5A151DEF61A67FA9B8CAAAF78538537430E50"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\data\\PasswordCrypto.kt",
+    "SHA256": "DACABFE4C1C10F0DD7BE0C5E39B980733DC7990FAC24B4BB27CF031052F4B4A1"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\data\\PortableNotes.kt",
+    "SHA256": "442F244A4C6D48FE1D8E59898B6C4CDB4CC42B9EB20A19EA6B11FF7C59880EEC"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\data\\PreviewCache.kt",
+    "SHA256": "5F6CAA786A02DDE4A344A680C5820FC42927F8F2F26C779A6213ABA079FB3E77"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\data\\StickerAssets.kt",
     "SHA256": "ADFD6513F9327D0BC1DC05002DC49A8394C18E1D5B5B6BFF321109D281A82755"
   },
   {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\data\\VaultMedia.kt",
+    "SHA256": "B0AF581154DF3FFC879C38AD2381819E755FADE01CF3916B1E2580B098911E0D"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\data\\VaultRepository.kt",
+    "SHA256": "B179CACCC81F9BE8A96143CDDF658AEE0C25850865EC92C51F06B44E2E1A7AD4"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\entitlement\\EntitlementManager.kt",
+    "SHA256": "B42BA1FF4DBA82CD0AC3F99BD10735F9DF8B0DFCE8DDB85CE7F028BF2E66EA6D"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\entitlement\\FeaturePolicy.kt",
+    "SHA256": "6E2DA6165424EEA672D2E20196FB42310F413BBD7E786E9652380937303EA9F5"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\entitlement\\PremiumEdits.kt",
+    "SHA256": "44C8BD812FA92F1816F8969457B2A2A97BA7BE6E61F310836B91A8C2854E288F"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\model\\NoteColors.kt",
+    "SHA256": "711E80D614C3364085B3173057A8FD6004959106FCA4E209789317F63D8F45F6"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\model\\OrderedListEditor.kt",
+    "SHA256": "EF26824CF98C14FBB13E2D06C06DBF1F2470A13BA29658B5F7EFF115F8AA9749"
+  },
+  {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\model\\StyleRanges.kt",
     "SHA256": "54B9B9F3D0D38D9298388EC11CF3ED26D55C9247E69D0CF298F1C966451A3DC5"
   },
   {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\reminder\\ReminderAlarms.kt",
+    "SHA256": "74848F9AC0DD10078EE5CFB63511CB771DE49004057F96F878887EAE222D779D"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\reminder\\ReminderCodec.kt",
+    "SHA256": "CB7672FB3A3A5186ECA48EE8D7B36116993F61092B9BC3FE6465098B2420D4CB"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\reminder\\ReminderDialog.kt",
+    "SHA256": "13ECCD9043185E004EE5EE9BDA258BE1B9EBEBBD571FD6F46370F6E0CA5E13E1"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\reminder\\ReminderReceiver.kt",
+    "SHA256": "917ECA2DE89BC54AB81C6CDFCC854583C5F41B02BB55030307FAA153BCC183ED"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\reminder\\ReminderRule.kt",
+    "SHA256": "49A9B73A47265D569825BA09CC148A13AF1BE355DB86A751DC4A02DB6EF6CD83"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\reminder\\ReminderScheduler.kt",
+    "SHA256": "3A7511346E7AF51C194FD6E87F73D51FCC80A1EE5C84E56F6B3E1D12320B3665"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\reminder\\ScheduleRestoreReceiver.kt",
+    "SHA256": "47656FC5ECD7457A922EF0B8EDD745F641EC1C91F6BECE9BCE02F69C4DE5E95C"
+  },
+  {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\rich\\NoteRenderer.kt",
-    "SHA256": "B6FAAEDE826D1943C37B54788C15C9AFA3C74BF5E221B7E537CA4318C53A0BCB"
+    "SHA256": "CA7EFC109B8B2E6E5A49D24743B62D080BA87B677AD1C7337A16531A83D6831C"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\rich\\PremiumTextEdits.kt",
+    "SHA256": "60EA1CA312682C5111E28200C51B2A86771AA8ADD53CA7615EEDD8750910B4C8"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\rich\\ReminderSpan.kt",
+    "SHA256": "1322E8BA50CF09BADC65020CEBE65729305AA323E5319FC67F5F6B9BD8BAE3E0"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\rich\\RichText.kt",
-    "SHA256": "4CE6E912ACB1AA8E11D1564918BA6442F83DA21A0027D2F400BB28B08128197D"
+    "SHA256": "2EC15F6909EA2C8B33ACA2CFC21FC8EB078A21D5AC2B543CBB2668AC3A75839A"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\rich\\SpanGeometry.kt",
-    "SHA256": "923DDEF3D308760B85426AA81C67623CBA86EA288186C59DA4235D904EF80C52"
+    "SHA256": "CC8D67175C5DDBCD37C4A124419CB8CC23A111293C619C9E31AFD08FE6DC4D0F"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\ui\\AppLanguage.kt",
+    "SHA256": "F799F7CD1F582EB6C1A5B8D893549B5DA0928048ED4FCF1F476922EDCE7D0A76"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\ui\\BottomNavigation.kt",
+    "SHA256": "8B842C1D9DB89A56930338E44EF44AAFEE5A6F5536AA088D0AA570A4D10F2852"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\ui\\BounceButton.kt",
+    "SHA256": "567862FFBEFD7BABCD25B11B5C021CD5AA600E4B7DF164E1D88658DCB1B85467"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\ui\\ImageSizeDialog.kt",
-    "SHA256": "6F885CFEC596ABB82387DE3B14DA563D5102F05454B534007DCB10ECB1E113CA"
+    "SHA256": "C02F580BB24A9E8A41D46F47E83FA07EE66DD08C097F517EBE32C8E85B7703F5"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\ui\\LanguageSwitcher.kt",
+    "SHA256": "06B1CB44007627DC45A248E6BF355C3D21C03C942B555D8EE0B8F3F5253799EB"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\ui\\LocalizedActivity.kt",
+    "SHA256": "5DA29EA40E3956C3C4D6FCBEA77A6B38F7127C57165C9902A15BAE735E713B01"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\ui\\LocalizedNoteTitle.kt",
+    "SHA256": "C58EFDFE16830653ADE19580DA60B77559C2A5737DE0B410CE6F63B3BDA25CE7"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\ui\\PasswordDialogs.kt",
+    "SHA256": "615893884CE7CE6AE7321193AE5740B5E7F65CF5335DEFD28139DFB958017440"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\ui\\ProFeatureDemoView.kt",
+    "SHA256": "D4B6AC1F8101F02D96396F40BE46A8F78DA6E9DB90B24934A224A192F295AF10"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\ui\\ProUi.kt",
+    "SHA256": "64A342417D1F9F2A621EC0593CACBA4D6E007B00C389740E202CF127CF707B08"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\ui\\StickerPicker.kt",
-    "SHA256": "DE7A9F7912ED340FC9B1C1F53361C1B273D17D8B67B5339021233C6824437DBB"
+    "SHA256": "ACB6106E919AE70574EF28999B827301A02D21E0A2AE7B137287C9ABCB86CA13"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\ui\\Ui.kt",
-    "SHA256": "D93B8D0C86F8FEE56B7D410325B9B5B04D7483F6E02F686C48BE872C0CA31934"
+    "SHA256": "DC41B4B11B74221964025F0A322BE4755FB578DC959CFD27D0C4BEE1EC3FA8A0"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\widget\\DateCalendarModel.kt",
+    "SHA256": "F46C2021FBDFAA41D5C4D665E9514C2768CEA2208BD79A468E4F7F3A5CF122C4"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\widget\\DateWidgetSchedule.kt",
+    "SHA256": "EFF8C38CE4448677B173BC314E8B9A1A2B4B70F6D1FB6AE621197F46D1BE8D3B"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\widget\\NoteWidgetProvider.kt",
-    "SHA256": "8F39FBA643A8334BEA4299EF0375F994CA8AD7C7BC18DCCD5FEB7F2B8AEB75AA"
+    "SHA256": "D1234A5E1D022AEDCD8CC6C23BC95AC60EF03EBFD671C0727280CDFB574A8715"
   },
   {
     "Path": "app\\src\\main\\java\\tw\\local\\memonote\\widget\\NoteWidgetService.kt",
-    "SHA256": "640C0EF4F25BAE863ED4CE23989BA7F100098A1384FBC0DBD36C297D4A437F27"
+    "SHA256": "1FD295CE3F15FE46A0250AE10A46F875F2A01F49EC6BFAA8069673B079F5CB78"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\widget\\WidgetAccess.kt",
+    "SHA256": "3932BD4AB6F9FB79BB140B4D40A62572F1676B54185743027FC458CAD06D6E80"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\widget\\WidgetAppearance.kt",
+    "SHA256": "ABCD92D2C88447D2421DB003F2246B9BCE57FBC62898543A3A9740AD4343793F"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\widget\\WidgetStyle.kt",
+    "SHA256": "D566C6FDD42F69F0BC054FE72A5798881FE5623E61C40E4825975C4FC8A7805E"
+  },
+  {
+    "Path": "app\\src\\main\\java\\tw\\local\\memonote\\widget\\WidgetStyleDialog.kt",
+    "SHA256": "5CEE8AE5422DEB14408A253121A085530497D05AC08657A3B724FD6185C6BF39"
   },
   {
     "Path": "app\\src\\main\\res\\drawable\\app_icon.xml",
     "SHA256": "0B9E1A1EAA3BC7E787DE8A7EF3481C82EF102133AAC6B87959C07C3B8A4C0E52"
   },
   {
+    "Path": "app\\src\\main\\res\\drawable\\notification_reminder.xml",
+    "SHA256": "EECF6E8351FB829BF4C044541B4481C0D23F22C21C5C5FC838B3FD1E33A8F173"
+  },
+  {
+    "Path": "app\\src\\main\\res\\drawable\\widget_corner_0.xml",
+    "SHA256": "22D74FAC21721F48C845882302DE0EDB412967415D0A2565DA63FEFE5C96F7E4"
+  },
+  {
+    "Path": "app\\src\\main\\res\\drawable\\widget_corner_12.xml",
+    "SHA256": "4038E95A24AC7F3EB9DAE9027298F5D589B6EF9A9B4D5F53249D983CD96DBB06"
+  },
+  {
+    "Path": "app\\src\\main\\res\\drawable\\widget_corner_24.xml",
+    "SHA256": "AF7C44892335FC2807CAB318565391A0E221E3AAEA4ABA6CC1194F8FC83D8E3B"
+  },
+  {
+    "Path": "app\\src\\main\\res\\drawable\\widget_corner_36.xml",
+    "SHA256": "2662B19E9B0E9E6BB5DC76555C45764B011D2BF51018FB0E55BC613809065863"
+  },
+  {
     "Path": "app\\src\\main\\res\\drawable\\widget_shape.xml",
     "SHA256": "A003C9C3ACAD0DD0FB488BDB6542F0DD653F7464D87C053255601B3A3ECBC34E"
   },
   {
+    "Path": "app\\src\\main\\res\\drawable-nodpi\\language_switch.png",
+    "SHA256": "E12081856B37F468A3C8EE2FA40D21A65985F8C3ADCC18E11B506ABE572E4BA9"
+  },
+  {
     "Path": "app\\src\\main\\res\\layout\\note_widget.xml",
-    "SHA256": "DF906CE3525798A4A5A000E0EC73F727C0274C188C86E0D27D343CF5293AB5EF"
+    "SHA256": "36ADAAAE15903B27071E212BF418C1BDEEADFD7B81A6163C17E4C8D39A7BB394"
   },
   {
     "Path": "app\\src\\main\\res\\layout\\widget_tile.xml",
@@ -161,7 +441,23 @@
   },
   {
     "Path": "app\\src\\main\\res\\values\\strings.xml",
-    "SHA256": "CF23ED34EB186E890C83CCFC24D9BA4012D636C0400516E99935659FE425E0F5"
+    "SHA256": "85BFF6169EBC24C379CF2295D8A54428856B776DECFA5EAFC4ABE7636FF27BF0"
+  },
+  {
+    "Path": "app\\src\\main\\res\\values-en\\strings.xml",
+    "SHA256": "771875EA6573848A2CE19B070A2919B0378C4D59DCC5E54FA6014181447B30E6"
+  },
+  {
+    "Path": "app\\src\\main\\res\\values-es\\strings.xml",
+    "SHA256": "0060DA4423AE92F002B4F003E77D31AA395BA937140A9635607F482E5F2FBB40"
+  },
+  {
+    "Path": "app\\src\\main\\res\\values-ja\\strings.xml",
+    "SHA256": "AE03446B96E54D65A08614E6D91BADBBD7B2951C290EAE384879ADBC29F525DD"
+  },
+  {
+    "Path": "app\\src\\main\\res\\values-ko\\strings.xml",
+    "SHA256": "6DEFD304AF352F55D9FC4D47D7717AF30AEB7C799F93C8A29B9DF3E5648B9C32"
   },
   {
     "Path": "app\\src\\main\\res\\xml\\note_widget_info.xml",
@@ -292,8 +588,76 @@
     "SHA256": "536BEB584CB8E894615262DC5342DC13F18F7FE21F4657A936DC559B99031B4A"
   },
   {
+    "Path": "app\\src\\play\\java\\tw\\local\\memonote\\entitlement\\FlavorEntitlement.kt",
+    "SHA256": "4FD8E032020EFD93B5D11DC229A55D389299E388D029FEADCF0B6B082F0C1601"
+  },
+  {
     "Path": "app\\src\\play\\res\\values\\strings.xml",
-    "SHA256": "F7023B90ADAB18582C4293860E6A484E1A8BA654A1E4AFA558146F480ADBCD57"
+    "SHA256": "852FFBB82C13BCC89BEC859876B42ECF3A5E4C72CAE28D3133D9EF89D6BCE5A4"
+  },
+  {
+    "Path": "app\\src\\play\\res\\values-en\\strings.xml",
+    "SHA256": "E167953FFB4A4C05C65FC046C8F1079F60FD16038363C56F92633C7415612E56"
+  },
+  {
+    "Path": "app\\src\\play\\res\\values-es\\strings.xml",
+    "SHA256": "050956BB6A55E61CE06192FED0ABF38FF62E5777807E41253F2A5469A2D2DC50"
+  },
+  {
+    "Path": "app\\src\\play\\res\\values-ja\\strings.xml",
+    "SHA256": "0C6C177982F1F250285E947B07649A3ADB34BE84727664479F2AB324E6D303EE"
+  },
+  {
+    "Path": "app\\src\\play\\res\\values-ko\\strings.xml",
+    "SHA256": "6A3EFF39A7FFE5A17F461A7AA0C0C83284461A9B1C421A0696A7B5E51C05977C"
+  },
+  {
+    "Path": "app\\src\\playDebug\\java\\tw\\local\\memonote\\entitlement\\PlayEntitlementSource.kt",
+    "SHA256": "5F52C087BEC8EFB3B93CFEBFED20113AAB1C753ABABC7C18CFBAA279F47712CF"
+  },
+  {
+    "Path": "app\\src\\playDebug\\java\\tw\\local\\memonote\\ui\\DebugEntitlementControls.kt",
+    "SHA256": "2954FFED9EE6415364B40C3BA49122546775E26F6636E933D127F04CEF2A5ECC"
+  },
+  {
+    "Path": "app\\src\\playDebug\\res\\values\\strings.xml",
+    "SHA256": "001F727CCCC26681CD537F90A8AD81F9C0F47E5C631D61D1AF3DCB7506F80BFC"
+  },
+  {
+    "Path": "app\\src\\playDebug\\res\\values-en\\strings.xml",
+    "SHA256": "A98877785AC4287392281D2F5918FE23A563FD0AF2374B909EC87A56B3F5288B"
+  },
+  {
+    "Path": "app\\src\\playDebug\\res\\values-es\\strings.xml",
+    "SHA256": "727E1A5770777A20669864F4C472ADC419FB797EBC46754252012B68CEB89AE5"
+  },
+  {
+    "Path": "app\\src\\playDebug\\res\\values-ja\\strings.xml",
+    "SHA256": "B2C9F5F0A5C75D888CF7A952FDFA193D1AE4675C5ADC2EE673B8D6E4A7DD327F"
+  },
+  {
+    "Path": "app\\src\\playDebug\\res\\values-ko\\strings.xml",
+    "SHA256": "A90909D72EE5984206991C5307E9B5E25A53344401C549E4F7A6B5852EF54ABA"
+  },
+  {
+    "Path": "app\\src\\playRelease\\java\\tw\\local\\memonote\\entitlement\\PlayEntitlementSource.kt",
+    "SHA256": "A9B11F162AE258EFD06C6799438F7CD9D8A2A0CAA5A8B0828054D8B09467175B"
+  },
+  {
+    "Path": "app\\src\\playRelease\\java\\tw\\local\\memonote\\ui\\DebugEntitlementControls.kt",
+    "SHA256": "4889F8E3F2770E65CB92507018EA5FC7B53767BF1952040CE6FBC25E50425AC8"
+  },
+  {
+    "Path": "app\\src\\test\\java\\tw\\local\\memonote\\CloudDriveClientTest.kt",
+    "SHA256": "F7C92045438E71F11F6BC7318D4BB51B5D0E67F495B667DA9C3791A8AECDAF21"
+  },
+  {
+    "Path": "app\\src\\test\\java\\tw\\local\\memonote\\OrderedListEditorTest.kt",
+    "SHA256": "4A3E0369F9761DE16CC5E5AE856E1C6C3CAFDAB74F0D9D23A8DD1C5D02790564"
+  },
+  {
+    "Path": "app\\src\\test\\java\\tw\\local\\memonote\\PasswordCryptoTest.kt",
+    "SHA256": "9086FAEAC3325F360437D2FD557982FA731624D30401AE3B8C22240A0609E90E"
   },
   {
     "Path": "app\\src\\test\\java\\tw\\local\\memonote\\StickerAssetsTest.kt",
@@ -304,28 +668,52 @@
     "SHA256": "CDC8E7B37CF9E6C60399DA4C7D91D72A5CF0240C9F9F420A5201462C293C13D9"
   },
   {
+    "Path": "app\\src\\test\\java\\tw\\local\\memonote\\entitlement\\FeaturePolicyTest.kt",
+    "SHA256": "647377B3CB17F28321E4C0B649F78D59FDB24482D196F654F0ED82FE610E1C14"
+  },
+  {
+    "Path": "app\\src\\test\\java\\tw\\local\\memonote\\reminder\\ReminderFeatureTest.kt",
+    "SHA256": "308516AF0BB0AB9D98E5720246019A478B67BAD7D31C6117F1E6DD610467683C"
+  },
+  {
+    "Path": "app\\src\\test\\java\\tw\\local\\memonote\\reminder\\ReminderRuleTest.kt",
+    "SHA256": "4C3C4092438822C09FD6BE91A353A4D4C1BF64752ED5495146B0F6255F36C7C7"
+  },
+  {
+    "Path": "app\\src\\test\\java\\tw\\local\\memonote\\widget\\DateCalendarModelTest.kt",
+    "SHA256": "5AD1E6208F225064F2C5C65D595F98846F38176F4535E0A03DE35CEFC95D7011"
+  },
+  {
+    "Path": "app\\src\\test\\java\\tw\\local\\memonote\\widget\\WidgetAccessTest.kt",
+    "SHA256": "CF98480393D6E8E4D7771CDE6849E2699E16CC0FFC385669538562AD753A75D0"
+  },
+  {
+    "Path": "app\\src\\testPlayRelease\\java\\tw\\local\\memonote\\PlayReleaseEntitlementTest.kt",
+    "SHA256": "C32D9C0FE94B195FCDA460EC16BB4AC59095C0937F76B74872A1CE5344EF3D23"
+  },
+  {
     "Path": "docs\\ASSET_SOURCES_PLAY.md",
-    "SHA256": "D8D29CC1448760F2B0D7D6443E1945526750E7FA23C91A43823BA8FBB91B22E5"
+    "SHA256": "6FFA636487C7FE24A8A3E5821ECF82BEAE194E3EB1AE90D7554D16AA240E25AE"
   },
   {
     "Path": "docs\\PLAY_CHANGELOG.md",
-    "SHA256": "E8E8359101D328A48B96736C89C33CD0DAB2BE7387B637CC099D14BCA979C98D"
+    "SHA256": "E5EF722B3677E6A27BA1E45924866FE50838A8188CB9D38DE923D92D5636317F"
   },
   {
     "Path": "docs\\PLAY_CONSOLE_DRAFT.md",
-    "SHA256": "EFF385EAFF32C975F8C66B7482EFF2F80FDD7D954ACC91FE41D056DC633B91C8"
+    "SHA256": "6F2FA033182343E2C153EE8F56A5F5A1A0639B522F43FBBD83AC4386B5DD3B85"
   },
   {
     "Path": "docs\\PLAY_RELEASE.md",
-    "SHA256": "21DBFCC478600C8B727E905BE2BA3D096E84FAAEC7B9411219C7E556A42BE45B"
+    "SHA256": "820D5A3DEAB90289DB41B93FA9945CEAB0A6687CE477DA065891B444BA8F0A3F"
   },
   {
     "Path": "docs\\PRIVACY_POLICY.md",
-    "SHA256": "84455A0041CCC80E694ADB6B34996E6D768C93E4BB1DC6E66A25068CAC24BC99"
+    "SHA256": "B4525BB55C284E52EF9D72967F28C74FC2371F7E09F34E8D82C36D64C6B15E66"
   },
   {
     "Path": "docs\\third_party\\TWEMOJI_LICENSE_GRAPHICS.txt",
-    "SHA256": "8AE9438818C26E4873B91D8C6AD620526C011E27E125677F13031EDA903F007C"
+    "SHA256": "F7C011EA2361BCA6404B53A3E4D7AE8F9CA2D5ABDC3916F83787789E71029D07"
   },
   {
     "Path": "gradle\\wrapper\\gradle-wrapper.jar",

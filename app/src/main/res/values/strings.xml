@@ -6,4 +6,14 @@
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowActionModeOverlay">true</item>
     </style>
+    <style name="DigitalTimePickerDialog" parent="android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorAccent">#7954B3</item>
+        <item name="android:timePickerStyle">@style/DigitalTimePicker</item>
+    </style>
+    <style name="DigitalTimePicker" parent="android:style/Widget.Material.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+    <style name="TabPageTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
 </resources>

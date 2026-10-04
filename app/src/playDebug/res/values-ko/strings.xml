@@ -1,0 +1,4 @@
+<resources>
+    <string name="debug_entitlement_switch">개발 테스트: Free / 구독 / 평생</string>
+    <string name="debug_entitlement_title">Play Debug 테스트 전용</string>
+</resources>

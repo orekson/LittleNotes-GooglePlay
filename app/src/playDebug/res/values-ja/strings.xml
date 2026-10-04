@@ -1,0 +1,4 @@
+<resources>
+    <string name="debug_entitlement_switch">開発テスト：Free／サブスク／永久版</string>
+    <string name="debug_entitlement_title">Play Debugテスト専用</string>
+</resources>

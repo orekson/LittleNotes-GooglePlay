@@ -1,0 +1,9 @@
+<resources>
+    <string name="widget_description">Nota personal desplazable con pegatinas emoji gratis, texto de colores y fondos personalizados.</string>
+    <string name="sticker_picker_title">Pegatinas emoji gratis</string>
+    <string name="sticker_picker_count">%1$d pegatinas emoji gratis · se eliminan con el texto</string>
+    <string name="sticker_content_description">Pegatina emoji %1$d</string>
+    <string name="sticker_source_title">Origen de las pegatinas y ayuda</string>
+    <string name="sticker_source_message">Mantén pulsada un área vacía de inicio → Widgets → 小小筆記. Elige una nota y mantén pulsado el widget para cambiar su tamaño.\n\nHerramientas de texto: selecciona texto para aplicar color, arcoíris o resplandor. Sin selección, el efecto se aplica a toda la nota. La atenuación solo afecta al fondo.\n\nLas 31 pegatinas emoji integradas proceden de Twemoji v14.0.3. Las imágenes usan la licencia Creative Commons Attribution 4.0 International, que permite el uso comercial con atribución. Consulta docs/ASSET_SOURCES_PLAY.md y el archivo de licencia de Twemoji en el proyecto.</string>
+    <string name="sticker_source_action">Ver licencia de los recursos</string>
+</resources>

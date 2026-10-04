@@ -1,6 +1,8 @@
 .tools/
 .gradle/
 .kotlin/
+.gstack/
+play-staging/
 local.properties
 **/build/
 output/

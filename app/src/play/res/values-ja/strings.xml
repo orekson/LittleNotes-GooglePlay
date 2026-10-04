@@ -1,0 +1,9 @@
+<resources>
+    <string name="widget_description">無料の絵文字ステッカー、色付きの光彩、カスタム背景に対応したスクロール可能な個人メモ。</string>
+    <string name="sticker_picker_title">無料の絵文字ステッカー</string>
+    <string name="sticker_picker_count">%1$d 枚の無料絵文字ステッカー · 文字と一緒に削除できます</string>
+    <string name="sticker_content_description">絵文字ステッカー %1$d</string>
+    <string name="sticker_source_title">ステッカーの出典と使い方</string>
+    <string name="sticker_source_message">ホーム画面の空白を長押し → ウィジェット → 小小筆記。メモを選び、長押ししてサイズを調整します。\n\n文字ツール：文字を選択して色、レインボー、光彩を適用します。未選択ならメモ全体に適用します。背景の淡さは背景だけに影響します。\n\n内蔵の絵文字ステッカー31枚は Twemoji v14.0.3 に由来します。画像には Creative Commons Attribution 4.0 International ライセンスが適用され、出典表示を条件に商用利用できます。詳しくはプロジェクト内の docs/ASSET_SOURCES_PLAY.md と Twemoji のライセンスファイルをご覧ください。</string>
+    <string name="sticker_source_action">素材のライセンスを見る</string>
+</resources>

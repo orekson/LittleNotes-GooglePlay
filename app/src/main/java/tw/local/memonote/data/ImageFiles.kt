@@ -3,11 +3,12 @@ package tw.local.memonote.data
 import android.content.Context
 import android.graphics.*
 import android.net.Uri
+import java.io.ByteArrayOutputStream
 import java.io.File
 import java.util.UUID
 
 object ImageFiles {
-    fun import(context: Context,uri: Uri,sticker: Boolean): String {
+    fun import(context: Context,uri: Uri,sticker: Boolean,vaultSession: String?=null): String {
         val bounds=BitmapFactory.Options().apply { inJustDecodeBounds=true }
         context.contentResolver.openInputStream(uri).use { BitmapFactory.decodeStream(it,null,bounds) }
         require(bounds.outWidth>0 && bounds.outHeight>0) { "無法讀取這張圖片" }
@@ -29,13 +30,45 @@ object ImageFiles {
         val oriented=if(orientation in 2..8) Bitmap.createBitmap(bitmap,0,0,bitmap.width,bitmap.height,matrix,true) else bitmap
         val factor=minOf(1f,max.toFloat()/maxOf(oriented.width,oriented.height))
         val scaled=Bitmap.createScaledBitmap(oriented,(oriented.width*factor).toInt().coerceAtLeast(1),(oriented.height*factor).toInt().coerceAtLeast(1),true)
-        val name="img_${UUID.randomUUID()}.png"
-        val file=File(context.filesDir,name)
-        try { file.outputStream().use { check(scaled.compress(Bitmap.CompressFormat.PNG,100,it)) } }
-        catch(e: Exception) { file.delete(); throw e }
-        finally { if(scaled!==oriented) scaled.recycle(); if(oriented!==bitmap) oriented.recycle(); bitmap.recycle() }
-        return "file:$name"
+        try {
+            if(vaultSession!=null) {
+                val output=ByteArrayOutputStream()
+                check(scaled.compress(Bitmap.CompressFormat.PNG,100,output))
+                return VaultMedia.put(vaultSession,output.toByteArray())
+            }
+            val name="img_${UUID.randomUUID()}.png"
+            val file=File(context.filesDir,name)
+            try { file.outputStream().use { check(scaled.compress(Bitmap.CompressFormat.PNG,100,it)) } }
+            catch(e: Exception) { file.delete(); throw e }
+            return "file:$name"
+        } finally {
+            if(scaled!==oriented) scaled.recycle()
+            if(oriented!==bitmap) oriented.recycle()
+            bitmap.recycle()
+        }
     }
+    fun readBytes(context: Context,ref: String): ByteArray {
+        val bytes = when {
+            ref.startsWith("vault:") -> VaultMedia.get(ref)
+                ?: error("加密附件已無法讀取，請重新開啟筆記")
+            ref.startsWith("file:") -> {
+                val name=ref.removePrefix("file:")
+                require(name.matches(Regex("[A-Za-z0-9._-]+")) && !name.contains(".."))
+                File(context.filesDir,name).readBytes()
+            }
+            ref.startsWith("asset:") -> {
+                val path=ref.removePrefix("asset:")
+                StickerAssets.assetCandidates(path).firstNotNullOfOrNull { candidate ->
+                    try { context.assets.open(candidate).use { it.readBytes() } }
+                    catch (_: java.io.IOException) { null }
+                } ?: error("找不到筆記使用的貼圖")
+            }
+            else -> error("不支援的附件來源")
+        }
+        require(bytes.size <= 20 * 1024 * 1024) { "附件超過 20 MB" }
+        return bytes
+    }
+
     fun load(context: Context,ref: String): Bitmap? = try {
         when {
             ref.startsWith("asset:") -> {
@@ -50,6 +83,9 @@ object ImageFiles {
                     }
                 }
                 null
+            }
+            ref.startsWith("vault:") -> VaultMedia.get(ref)?.let {
+                BitmapFactory.decodeByteArray(it,0,it.size)
             }
             ref.startsWith("file:") -> {
                 val name=ref.removePrefix("file:")

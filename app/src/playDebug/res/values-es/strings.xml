@@ -1,0 +1,4 @@
+<resources>
+    <string name="debug_entitlement_switch">Prueba de desarrollo: Free / suscripción / permanente</string>
+    <string name="debug_entitlement_title">Solo para pruebas de Play Debug</string>
+</resources>

@@ -1,0 +1,14 @@
+Política de privacidad de 小小筆記
+Fecha de entrada en vigor: 25 de septiembre de 2026
+
+El texto, las categorías, los fondos, las imágenes insertadas, las pegatinas y las casillas de las notas se guardan en tu dispositivo de forma predeterminada. Puedes editar o eliminar notas desde la app. 小小筆記 no tiene anuncios ni un servidor de notas en la nube operado por el desarrollador.
+
+Puedes conectar voluntariamente una cuenta de Google para activar las copias automáticas en Drive. Al hacerlo, la app cifra las notas y los adjuntos con la contraseña de copia que elijas y los envía directamente por HTTPS a la carpeta visible «小小筆記備份» de tu propio Google Drive. El desarrollador no recibe tu contraseña de Google, tu contraseña de copia ni tus archivos de la nube. Google trata los datos de Drive conforme a sus condiciones y política de privacidad.
+
+El nombre de la cuenta de Google conectada, el estado de la copia y la contraseña de copia cifrada mediante Android Keystore se guardan en el dispositivo. Para restaurar tras cambiar de teléfono o reinstalar la app, necesitas la contraseña original. Puedes desactivar la copia automática o desconectar la cuenta; al desconectar se borra la contraseña guardada localmente. Los archivos cifrados que ya estén en Drive permanecen allí hasta que los elimines.
+
+También puedes exportar o importar un archivo .lnbackup cifrado mediante el selector de archivos del sistema Android. Tú eliges dónde guardarlo.
+
+Los recordatorios se programan en el dispositivo. A la hora indicada, una notificación de Android puede mostrar toda la línea que contiene el recordatorio; puedes gestionar las notificaciones en los ajustes del sistema. Las horas de los recordatorios se incluyen con las notas en las copias cifradas. Las fechas asignadas a los widgets solo se guardan en este dispositivo. Las notas cifradas bloqueadas no muestran su contenido en recordatorios.
+
+Si tienes preguntas de privacidad, utiliza los datos de contacto del desarrollador en la ficha de Google Play.

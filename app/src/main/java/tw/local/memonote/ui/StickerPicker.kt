@@ -12,7 +12,7 @@ object StickerPicker {
         val column=Ui.column(activity); Ui.pad(column,16)
         column.addView(Ui.label(activity,"小小的陪伴，放進你的日常",14f,Ui.muted))
         val grid=GridLayout(activity).apply { columnCount=4 }
-        val dialog=AlertDialog.Builder(activity).setTitle(activity.getString(R.string.sticker_picker_title)).setView(column).setNegativeButton("取消",null).setNeutralButton("匯入自己的貼圖") { _,_-> onImport() }.create()
+        val dialog=AlertDialog.Builder(activity).setTitle(activity.getString(R.string.sticker_picker_title)).setView(column).setNegativeButton(AppLanguage.text(activity,"取消"),null).setNeutralButton(AppLanguage.text(activity,"匯入自己的貼圖")) { _,_-> onImport() }.create()
         val files=StickerAssets.sortStickerFiles((activity.assets.list("stickers") ?: emptyArray()).filter { it.endsWith(".png") })
         for((i,file) in files.withIndex()) {
             val ref="asset:stickers/$file"

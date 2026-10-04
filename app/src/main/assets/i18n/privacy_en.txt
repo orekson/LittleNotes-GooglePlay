@@ -1,0 +1,14 @@
+小小筆記 Privacy Policy
+Effective date: September 25, 2026
+
+Note text, categories, backgrounds, inserted images, stickers, and checklist status are stored on your device by default. You can edit or delete notes in the app. 小小筆記 has no ads and no developer-operated note cloud server.
+
+You may choose to connect a Google account for automatic Drive backups. When enabled, the app encrypts notes and attachments with the backup password you set and sends them over HTTPS directly to the visible “小小筆記備份” folder in your own Google Drive. The developer does not receive your Google password, backup password, or cloud files. Google processes Drive data under its own terms and privacy policy.
+
+The connected Google account name, backup status, and backup password encrypted with Android Keystore are stored on your device. To restore after changing phones or reinstalling, you need the original backup password. You can turn off automatic backup or disconnect; disconnecting clears the locally stored backup password. Encrypted files already in Drive remain until you delete them.
+
+You can also export or import an encrypted .lnbackup through the Android system file picker. You choose where it is stored.
+
+Note reminders are scheduled on your device. At the chosen time, an Android notification may show the full line containing the reminder; you can manage notifications in system settings. Reminder times are included with notes in encrypted backups. Widget date assignments remain only on this device. Locked encrypted notes do not show content in reminders.
+
+For privacy questions, use the developer contact details on the Google Play listing.

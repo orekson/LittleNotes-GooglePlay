@@ -6,6 +6,7 @@ import android.widget.*
 import tw.local.memonote.R
 import tw.local.memonote.data.NoteStore
 import tw.local.memonote.rich.NoteRenderer
+import tw.local.memonote.ui.AppLanguage
 
 class NoteWidgetService: RemoteViewsService() {
     override fun onConfigurationChanged(config: android.content.res.Configuration) { super.onConfigurationChanged(config); NoteWidgetProvider.updateAll(this) }
@@ -17,10 +18,14 @@ class NoteWidgetService: RemoteViewsService() {
         private fun reload() {
             renderer=try {
                 val note=NoteStore(this@NoteWidgetService).use { it.find(NoteWidgetProvider.noteId(this@NoteWidgetService,widgetId)) }
-                note?.let {
+                note?.takeUnless { it.isLocked }?.let {
                     val dp=NoteWidgetProvider.widthDp(this@NoteWidgetService,widgetId)
                     val width=(dp*1.5f).toInt().coerceAtMost(540)
-                    NoteRenderer(this@NoteWidgetService,it,width,width.toFloat()/dp)
+                    val background=WidgetAppearance.background(this@NoteWidgetService,widgetId,it.background)
+                    val style=WidgetStyle.effective(this@NoteWidgetService,widgetId)
+                    NoteRenderer(this@NoteWidgetService,it,width,width.toFloat()/dp,
+                        WidgetAppearance.textColor(background),style.fontSize,style.font,
+                        style.padding,style.lineGap,style.showImages)
                 }
             } catch(e: Exception) { null }
         }
@@ -43,7 +48,7 @@ class NoteWidgetService: RemoteViewsService() {
                     setViewVisibility(bounds,if(hit==null) android.view.View.GONE else android.view.View.VISIBLE)
                     if(hit!=null) {
                         setViewPadding(bounds,(hit.rect.left*factor).toInt(),(hit.rect.top*factor).toInt(),((current.width-hit.rect.right)*factor).toInt(),((bitmap.height-hit.rect.bottom)*factor).toInt())
-                        setContentDescription(target,(if(hit.checked) "已完成，點一下取消：" else "未完成，點一下勾選：")+hit.label)
+                        setContentDescription(target,AppLanguage.format(this@NoteWidgetService,if(hit.checked) "已完成，點一下取消：%1\$s" else "未完成，點一下勾選：%1\$s",hit.label))
                         setOnClickFillInIntent(target,Intent().putExtra("noteId",current.note.id).putExtra("checkId",hit.id))
                     }
                 }

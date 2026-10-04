@@ -12,10 +12,10 @@ object ImageSizeDialog {
         val content=Ui.column(activity); Ui.pad(content,16)
         val label=Ui.label(activity,"",14f); content.addView(label)
         val frame=FrameLayout(activity); content.addView(frame,LinearLayout.LayoutParams(-1,Ui.dp(activity,240)))
-        val image=ImageView(activity).apply { setImageBitmap(ImageFiles.load(activity,ref)); scaleType=ImageView.ScaleType.FIT_CENTER; contentDescription="雙指縮放圖片" }
+        val image=ImageView(activity).apply { setImageBitmap(ImageFiles.load(activity,ref)); scaleType=ImageView.ScaleType.FIT_CENTER; contentDescription=AppLanguage.text(activity,"雙指縮放圖片") }
         frame.addView(image,FrameLayout.LayoutParams(Ui.dp(activity,size),Ui.dp(activity,size),android.view.Gravity.CENTER))
-        val slider=SeekBar(activity).apply { max=456; progress=size-24; contentDescription="圖片大小" }
-        fun refresh() { label.text="圖片大小：${size} dp"; image.layoutParams=FrameLayout.LayoutParams(Ui.dp(activity,size.coerceAtMost(230)),Ui.dp(activity,size.coerceAtMost(230)),android.view.Gravity.CENTER) }
+        val slider=SeekBar(activity).apply { max=456; progress=size-24; contentDescription=AppLanguage.text(activity,"圖片大小") }
+        fun refresh() { label.text=AppLanguage.format(activity,"圖片大小：%1\$d dp",size); image.layoutParams=FrameLayout.LayoutParams(Ui.dp(activity,size.coerceAtMost(230)),Ui.dp(activity,size.coerceAtMost(230)),android.view.Gravity.CENTER) }
         slider.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(s: SeekBar?,p: Int,user: Boolean) { size=p+24; refresh() }
             override fun onStartTrackingTouch(s: SeekBar?)=Unit
@@ -26,6 +26,6 @@ object ImageSizeDialog {
         })
         frame.setOnTouchListener { _,event -> pinch.onTouchEvent(event); true }
         content.addView(slider); content.addView(Ui.label(activity,"拖動滑桿或雙指縮放。\n保留原圖比例；超過筆記寬度會自動縮小。",12f,Ui.muted)); refresh()
-        AlertDialog.Builder(activity).setTitle("調整圖片大小").setView(content).setNegativeButton("取消",null).setPositiveButton("套用") { _,_-> onApply(size) }.show()
+        AlertDialog.Builder(activity).setTitle(AppLanguage.text(activity,"調整圖片大小")).setView(content).setNegativeButton(AppLanguage.text(activity,"取消"),null).setPositiveButton(AppLanguage.text(activity,"套用")) { _,_-> onApply(size) }.show()
     }
 }

@@ -1,0 +1,4 @@
+<resources>
+    <string name="debug_entitlement_switch">Developer test: Free / subscription / lifetime</string>
+    <string name="debug_entitlement_title">Play Debug testing only</string>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="debug_entitlement_switch">開發測試：切換 Free／訂閱／永久版</string>
+    <string name="debug_entitlement_title">僅限 Play Debug 測試</string>
+</resources>
