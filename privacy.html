@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="小小筆記的資料處理、加密備份、購買驗證與隱私聯絡方式。">
+<title>小小筆記隱私權政策</title>
+<style>
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #26364d; background: #f6f8fd; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #244fb0; text-underline-offset: .2em; }
+a:focus-visible { outline: 3px solid #244fb0; outline-offset: 4px; }
+.skip { position: absolute; top: -5rem; left: 1rem; padding: .7rem; background: white; }
+.skip:focus { top: 1rem; }
+.wrap { max-width: 1060px; margin: auto; padding: 32px 24px; }
+header { padding: 14px 0 28px; }
+.brand { color: #465b7c; font-size: 1rem; letter-spacing: .12em; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.5rem); margin: 12px 0 0; line-height: 1.4; }
+.layout { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 32px; align-items: start; }
+nav { padding: 18px 0; position: sticky; top: 16px; }
+nav h2 { font-size: 1rem; margin: 0 0 12px; }
+nav ul { padding: 0; margin: 0; list-style: none; }
+nav li { margin: 0 0 12px; line-height: 1.6; }
+nav a { text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+article { background: white; padding: 28px 32px; border: 1px solid #dce3f0; border-radius: 16px; }
+article h2 { color: #243954; font-size: 1.35rem; line-height: 1.6; margin: 32px 0 12px; scroll-margin-top: 20px; }
+article p { font-size: 1rem; line-height: 1.9; margin: 14px 0; overflow-wrap: anywhere; }
+code { font: inherit; background: #f0f4fc; border-radius: 4px; padding: 1px 4px; overflow-wrap: anywhere; }
+footer { padding: 24px 0 0; color: #52637c; font-size: .9rem; }
+@media (max-width: 740px) {
+ .wrap { padding: 20px 16px; }
+ .layout { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+ nav { position: static; padding: 0; }
+ nav ul { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+ nav li { margin: 0; }
+ article { padding: 16px 20px; }
+}
+@media print { :root { background: white; color: black; } nav, .skip { display: none; } .layout { display: block; } article { border: 0; padding: 0; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#policy">跳到政策內容</a>
+<div class="wrap">
+<header><div class="brand">小小筆記</div><h1>隱私權政策</h1></header>
+<main class="layout">
+<nav aria-label="政策章節"><h2>政策章節</h2><ul><li><a href="#heading-1">本機資料</a></li>
+<li><a href="#heading-2">可選的 Google Drive 備份</a></li>
+<li><a href="#heading-3">手動備份與還原</a></li>
+<li><a href="#heading-4">提醒與桌面小工具</a></li>
+<li><a href="#heading-5">Play 購買驗證（付費功能開放時）</a></li>
+<li><a href="#heading-6">第三方素材</a></li>
+<li><a href="#heading-7">兒童與聯絡方式</a></li>
+<li><a href="#heading-8">政策變更</a></li>
+</ul></nav>
+<article id="policy" tabindex="-1"><p><strong>生效日期：2026 年 10 月 8 日</strong></p>
+<p>小小筆記（以下稱「本應用程式」）可在 Android 裝置上建立筆記與桌面小工具。本政策說明本應用程式處理資料的方式。</p>
+<section aria-labelledby="heading-1"><h2 id="heading-1">本機資料</h2>
+<p>筆記文字、分類、顏色、背景、插入圖片、貼圖與勾選狀態預設保留在裝置的應用程式資料中。使用者可在 App 中編輯或刪除。解除安裝時，Android 會依系統規則移除本機資料。本應用程式不投放廣告，也沒有開發者經營的筆記雲端伺服器。</p>
+</section>
+<section aria-labelledby="heading-2"><h2 id="heading-2">可選的 Google Drive 備份</h2>
+<p>使用者可在「個人」頁主動連接 Google 帳號，授權本應用程式建立與管理自己建立的 Google Drive 檔案。未啟用前，不會執行自動雲端備份。啟用後，本應用程式以使用者設定的備份密碼加密筆記、分類和附件，透過 HTTPS 直接將 .lnbackup 檔傳送至使用者自己的 Google Drive 可見資料夾。Google Drive 的儲存與帳號資料依 Google 的服務條款與隱私權政策處理；開發者沒有伺服器接收這些備份，也不會取得使用者的 Google 密碼或備份密碼。</p>
+<p>本應用程式將連結的 Google 帳號名稱、備份狀態與加密後的備份密碼保存在裝置上。備份密碼由 Android Keystore 的金鑰保護；備份檔需原密碼才能還原。換機或重裝後本機金鑰不會保留，使用者需再次輸入備份密碼。使用者可在 App 內關閉自動備份或中斷 Google 連結；中斷連結會清除本機保存的備份密碼，但不會刪除已放在 Google Drive 的備份檔。使用者可自行在 Drive 刪除該資料夾或檔案。</p>
+</section>
+<section aria-labelledby="heading-3"><h2 id="heading-3">手動備份與還原</h2>
+<p>使用者也可以透過 Android 系統檔案選擇器匯出或匯入加密 .lnbackup。儲存位置由使用者決定，包括已連接的 Google Drive 等檔案提供者。</p>
+</section>
+<section aria-labelledby="heading-4"><h2 id="heading-4">提醒與桌面小工具</h2>
+<p>筆記提醒在裝置本機排程。提醒時間到達時，Android 通知可能顯示含有提醒標記的完整文字行；你可透過系統設定管理通知。提醒時間會隨筆記納入加密備份，桌面小工具的日期指派則只保留在這台裝置。上鎖的加密筆記不會在提醒中顯示內容。</p>
+</section>
+<section aria-labelledby="heading-5"><h2 id="heading-5">Play 購買驗證（付費功能開放時）</h2>
+<p>Play 版透過 Google Play 處理訂閱與買斷付款。Google 處理付款帳戶與支付資訊，開發者不接收信用卡資料。為查驗與恢復 Pro、確認購買、核對續訂與退款以及防止偽造，App 會經 HTTPS 向開發者在 Google Cloud 經營的付款驗證服務傳送購買 token、商品類型與 ID、隨機安裝識別碼、一次性 nonce，以及 Google Play Integrity 權杖和請求雜湊。已配置付款服務的 Play 版在前景查驗購買狀態時也會傳送驗證請求，即使目前沒有付費購買。Google Play、Integrity 與 Google Cloud 依 Google 的政策處理相關資料。</p>
+<p>付款服務處理購買狀態、到期與確認狀態、驗證時間及必要的退款審查資料，並將簽署的權限憑證傳回 App。服務不接收筆記、附件、Drive 存取權杖、Google 密碼或備份密碼，不使用付款資料投放廣告。雲端服務亦可能記錄 IP、請求時間及回應狀態等必要的安全與運作紀錄；不在應用程式紀錄中保存請求內容或完整購買 token。</p>
+<p>購買紀錄在提供權限、恢復購買及處理退款或爭議所需期間保留；失效紀錄依保留政策清除，未結案退款審查保留至處理完成。安裝識別碼、簽署權限憑證與離線檢查資料保存在本機，解除安裝會移除這些本機資料。你可透過商店頁面的開發者聯絡方式提出付款驗證資料查詢或刪除請求；為避免刪除他人資料，可能需要核對 Google Play 訂單。依法或處理未結爭議必須保留的資料會另行說明。刪除本機資料或開發者驗證紀錄不會取消訂閱，也不會刪除 Google 自行保存的交易資料；請在 Google Play 管理訂閱及 Google 帳戶資料。</p>
+</section>
+<section aria-labelledby="heading-6"><h2 id="heading-6">第三方素材</h2>
+<p>Play 版的免費表情貼圖使用 Twemoji 14.0.3 圖形，採 Creative Commons Attribution 4.0（CC BY 4.0）授權。授權與署名資訊請見 docs/third_party/TWEMOJI_LICENSE_GRAPHICS.txt 與 docs/ASSET_SOURCES_PLAY.md。</p>
+</section>
+<section aria-labelledby="heading-7"><h2 id="heading-7">兒童與聯絡方式</h2>
+<p>本應用程式不是以兒童為特定目標族群，也不依年齡收集資料。若對隱私權有疑問，請透過 Google Play 商店頁面顯示的開發者聯絡方式聯繫。</p>
+</section>
+<section aria-labelledby="heading-8"><h2 id="heading-8">政策變更</h2>
+<p>若資料處理方式或適用法律變更，我們會更新本文件的生效日期與內容。</p>
+</section>
+</article>
+</main>
+<footer>小小筆記 · 隱私權政策</footer>
+</div>
+</body>
+</html>
