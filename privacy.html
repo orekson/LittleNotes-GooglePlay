@@ -49,19 +49,19 @@ footer { padding: 24px 0 0; color: #52637c; font-size: .9rem; }
 <li><a href="#heading-2">可選的 Google Drive 備份</a></li>
 <li><a href="#heading-3">手動備份與還原</a></li>
 <li><a href="#heading-4">提醒與桌面小工具</a></li>
-<li><a href="#heading-5">Play 購買驗證（付費功能開放時）</a></li>
+<li><a href="#heading-5">Play 購買驗證、資料保留與刪除（付費功能開放時）</a></li>
 <li><a href="#heading-6">第三方素材</a></li>
 <li><a href="#heading-7">兒童與聯絡方式</a></li>
 <li><a href="#heading-8">政策變更</a></li>
 </ul></nav>
-<article id="policy" tabindex="-1"><p><strong>生效日期：2026 年 10 月 8 日</strong></p>
+<article id="policy" tabindex="-1"><p><strong>生效日期：2026 年 10 月 22 日</strong></p>
 <p>小小筆記（以下稱「本應用程式」）可在 Android 裝置上建立筆記與桌面小工具。本政策說明本應用程式處理資料的方式。</p>
 <section aria-labelledby="heading-1"><h2 id="heading-1">本機資料</h2>
 <p>筆記文字、分類、顏色、背景、插入圖片、貼圖與勾選狀態預設保留在裝置的應用程式資料中。使用者可在 App 中編輯或刪除。解除安裝時，Android 會依系統規則移除本機資料。本應用程式不投放廣告，也沒有開發者經營的筆記雲端伺服器。</p>
 </section>
 <section aria-labelledby="heading-2"><h2 id="heading-2">可選的 Google Drive 備份</h2>
-<p>使用者可在「個人」頁主動連接 Google 帳號，授權本應用程式建立與管理自己建立的 Google Drive 檔案。未啟用前，不會執行自動雲端備份。啟用後，本應用程式以使用者設定的備份密碼加密筆記、分類和附件，透過 HTTPS 直接將 .lnbackup 檔傳送至使用者自己的 Google Drive 可見資料夾。Google Drive 的儲存與帳號資料依 Google 的服務條款與隱私權政策處理；開發者沒有伺服器接收這些備份，也不會取得使用者的 Google 密碼或備份密碼。</p>
-<p>本應用程式將連結的 Google 帳號名稱、備份狀態與加密後的備份密碼保存在裝置上。備份密碼由 Android Keystore 的金鑰保護；備份檔需原密碼才能還原。換機或重裝後本機金鑰不會保留，使用者需再次輸入備份密碼。使用者可在 App 內關閉自動備份或中斷 Google 連結；中斷連結會清除本機保存的備份密碼，但不會刪除已放在 Google Drive 的備份檔。使用者可自行在 Drive 刪除該資料夾或檔案。</p>
+<p>使用者可在「個人」頁主動連接 Google 帳號，授權本應用程式建立與管理自己建立的 Google Drive 檔案。連結 Google 帳號或修改筆記不會自動上傳。只有使用者點選「立即備份」後，本應用程式以使用者設定的備份密碼加密筆記、分類和附件，透過 HTTPS 直接將 .lnbackup 檔傳送至使用者自己的 Google Drive 可見資料夾。Google Drive 的儲存與帳號資料依 Google 的服務條款與隱私權政策處理；開發者沒有伺服器接收這些備份，也不會取得使用者的 Google 密碼或備份密碼。</p>
+<p>本應用程式將連結的 Google 帳號名稱、備份狀態與加密後的備份密碼保存在裝置上。備份密碼由 Android Keystore 的金鑰保護；備份檔需原密碼才能還原。換機或重裝後本機金鑰不會保留，使用者需再次輸入備份密碼。使用者可在 App 內中斷 Google 連結；中斷連結會清除本機保存的備份密碼，但不會刪除已放在 Google Drive 的備份檔。使用者可自行在 Drive 刪除該資料夾或檔案。</p>
 </section>
 <section aria-labelledby="heading-3"><h2 id="heading-3">手動備份與還原</h2>
 <p>使用者也可以透過 Android 系統檔案選擇器匯出或匯入加密 .lnbackup。儲存位置由使用者決定，包括已連接的 Google Drive 等檔案提供者。</p>
@@ -69,10 +69,11 @@ footer { padding: 24px 0 0; color: #52637c; font-size: .9rem; }
 <section aria-labelledby="heading-4"><h2 id="heading-4">提醒與桌面小工具</h2>
 <p>筆記提醒在裝置本機排程。提醒時間到達時，Android 通知可能顯示含有提醒標記的完整文字行；你可透過系統設定管理通知。提醒時間會隨筆記納入加密備份，桌面小工具的日期指派則只保留在這台裝置。上鎖的加密筆記不會在提醒中顯示內容。</p>
 </section>
-<section aria-labelledby="heading-5"><h2 id="heading-5">Play 購買驗證（付費功能開放時）</h2>
+<section aria-labelledby="heading-5"><h2 id="heading-5">Play 購買驗證、資料保留與刪除（付費功能開放時）</h2>
 <p>Play 版透過 Google Play 處理訂閱與買斷付款。Google 處理付款帳戶與支付資訊，開發者不接收信用卡資料。為查驗與恢復 Pro、確認購買、核對續訂與退款以及防止偽造，App 會經 HTTPS 向開發者在 Google Cloud 經營的付款驗證服務傳送購買 token、商品類型與 ID、隨機安裝識別碼、一次性 nonce，以及 Google Play Integrity 權杖和請求雜湊。已配置付款服務的 Play 版在前景查驗購買狀態時也會傳送驗證請求，即使目前沒有付費購買。Google Play、Integrity 與 Google Cloud 依 Google 的政策處理相關資料。</p>
 <p>付款服務處理購買狀態、到期與確認狀態、驗證時間及必要的退款審查資料，並將簽署的權限憑證傳回 App。服務不接收筆記、附件、Drive 存取權杖、Google 密碼或備份密碼，不使用付款資料投放廣告。雲端服務亦可能記錄 IP、請求時間及回應狀態等必要的安全與運作紀錄；不在應用程式紀錄中保存請求內容或完整購買 token。</p>
 <p>購買紀錄在提供權限、恢復購買及處理退款或爭議所需期間保留；失效紀錄依保留政策清除，未結案退款審查保留至處理完成。安裝識別碼、簽署權限憑證與離線檢查資料保存在本機，解除安裝會移除這些本機資料。你可透過商店頁面的開發者聯絡方式提出付款驗證資料查詢或刪除請求；為避免刪除他人資料，可能需要核對 Google Play 訂單。依法或處理未結爭議必須保留的資料會另行說明。刪除本機資料或開發者驗證紀錄不會取消訂閱，也不會刪除 Google 自行保存的交易資料；請在 Google Play 管理訂閱及 Google 帳戶資料。</p>
+<p>付款驗證資料庫會保存原始購買 token、必要的連結購買與退款 token。有效購買記錄沒有固定自動刪除期限，供權限驗證與恢復使用；不再提供權限的記錄設定 90 天刪除期限。防重播 nonce 的雜湊設定 10 分鐘刪除期限；未結案退款資料保留至人工處理完成。Firestore 到期刪除為非同步作業，不保證到期當下立即刪除。Cloud Run 請求記錄可能包含 IP、使用者代理、請求時間、延遲與狀態碼；一般雲端日誌保留 30 天，Google 必要管理稽核日誌保留 400 天。你可寄信至 aajustin10000@gmail.com 要求查詢或刪除開發者保存的付款驗證資料，標題請寫「LittleNotes 資料刪除」。核對訂單歸屬後處理；如需依法或為未結爭議保留，會說明原因。日後再次查驗有效購買時，可能重新建立必要的驗證記錄。</p>
 </section>
 <section aria-labelledby="heading-6"><h2 id="heading-6">第三方素材</h2>
 <p>Play 版的免費表情貼圖使用 Twemoji 14.0.3 圖形，採 Creative Commons Attribution 4.0（CC BY 4.0）授權。授權與署名資訊請見 docs/third_party/TWEMOJI_LICENSE_GRAPHICS.txt 與 docs/ASSET_SOURCES_PLAY.md。</p>
